@@ -217,3 +217,9 @@ Software é o que dá sentido ao hardware. É o que faz o hardware operar em fun
 ~~~
 
 > Importante notar que todo software foi construído por pessoas através de uma linguagem de programação.
+
+<br>
+
+## Tópico 4 - Estrutura de um computador
+
+<br>

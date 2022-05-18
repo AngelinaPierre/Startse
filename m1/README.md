@@ -318,7 +318,87 @@ Aqui temos uma esquematização da arquitetura de Von Neumann. Até os dias de h
 
 <br>
 
+- A ideia de algo como internet surge em contextos militares na década de 60, havia um grande temor em relação a possíveis ataques nucleares. 
+- Pesquisas buscavam desenvolver uma cadeia de comunicações onde não existisse um ponto central que, ao ser destruído, colocaria em colapso todo o sistema de comunicações.
+- Em meados de 1962, os Estados Unidos criaram a Cadeia de Comunicação Distribuída (CCD), que era composta por vários computadores interligados por várias linhas telefônicas diferentes, que objetivava-se dividir o volume de dados a ser trafegado entre os computadores em pequenos “pacotes”, despachando-os por meio das diferentes linhas telefônicas até um computador de destino. 
 
+<br>
+
+Neste modelo, na eventual falha de um dos `pacotes` por meio de um dos `caminhos`, o sistema poderia utilizar um caminho equivalente, ou seja, não há um ponto único de falha. Uma eventual interrupção em alguma linha de transmissão `não interrompe completamente o sistema`.
+
+A ancestral da internet foi a `ARPANET`. Foi a primeira `rede de computadores` por comutação de pacotes. Em 1966 a ARPANET estava instalada em 17 locais diferentes nos quais computadores conectados às linhas telefônicas conseguiam trocar informações. Em um primeiro momento, sua utilização foi exclusivamente militar.
+
+<br>
+
+### Mas como isso virou a `internet` que conhecemos hoje?
+
+- Com constantes otimizações e incorporações de novas tecnologias à ARPANET, como o desenvolvimento do `protocolo de rede, Transmission Control Protocol/Internet Protocol (TCP/IP)` em 1982 e que, depois, foi liberado para utilização civil, até hoje, tem se mostrado uma das melhores alternativas para comunicação entre computadores.
+- Com a adoção de um protocolo único e padronizado, tornou-se viável conectar computadores de diferentes fabricantes em redes com diferentes meios de distribuição.
+
+<br>
+
+### Protocolo de rede:
+
+- Um protocolo de rede é um conjunto de regras que definem a forma como dois sistemas se comunicam.
+- É uma espécie de língua falada entre os dispositivos.
+- Se ambos 'falam' o mesmo protocolo então a comunicação pode ser estabelecida.
+
+<br>
+
+#### Como se dá o acesso à Internet:
+
+- Por meio de uma Internet Service Provider (ISP) ou Provedor de Serviço de Internet e utiliza-se de, pelo menos, três componentes (CPE, rede de acesso e POP)
+- Customer Premise Equipment (CPE) é o equipamento que conectar o dispositivo à rede de acesso (exemplo: modem).
+- Rede de acesso é o tipo de infraestrutura que liga o dispositivo ao provedor de internet (exemplos: cabos de cobre, fibra ótica, WI-FI).
+- Point of Presence (POP) é o ponto de presença do provedor onde estão os equipamentos que atribuem ao dispositivo um endereço IP, dando-lhe acesso à internet.
+
+<br>
+
+### Endereço IP e MAC Address:
+
+- Para que um computador possa se conectar a internet e se comunicar com outros computadores, faz-se necessário que este recea um número de identificação - esse número é conhecido como endereço Internet Protocol (IP).
+- Para entender a importância de um endereço IP, podemos fazer uma analogia com o sistema de telefonia: para que duas pessoas conversem entre si, ambas precisam se um número telefônico (origem e destino).
+- O mesmo se aplica aos computadores conectados à internet: cada um, no momento em que se conecta a um provedor de acesso, recebe um número (número IP), a partir do qual pode realizar 'chamada" (conexões) com outros computadores que também estejam conectados à internet.
+- Mas como o provedor de acesso sabe se são aparelhos diferentes conectando à internet?
+  - Pelo MAC Address! O endereço MAC é um número único de cada máquina, que eprmite distinguir e identificar um aparelho específico.
+  - Permitindo bloquear ou garantir aceso de um aparelho específico à redes privadas por exemplo.
+- Um endereço de internet, IP na versão 4, é um número escrito em quatro partes (octetos), cada uma variando de 0 a 255 – por exemplo: 200.132.39.115.
+- É importante ressaltar que um endereço IP não identifica necessariamente, um equipamento individual, mas sim uma conexão.
+- Podemos encontrar equipamentos (gateways) conectados a várias redes que possuem mais de um endereço IP (um para cada conexão).
+- O endereço MAC é formado por um conjunto de 6 bytes separados por dois pontos (“:”) ou hífen (“-”), sendo cada byte representado por 
+dois algarismos na forma hexadecimal, como por exemplo: "00:19:B9:FB:E2:58".
+
+
+### Outros Conceitos Importantes: `DNS` E `HTTP`:
+
+<br>
+
+#### `DNS`:
+
+- Para facilitar a memorização dos endereços, foi implementado um sistema de nomes de domínio - DOmain Name System (DNS) - através do qual é possivel traduzir um endereço, como www.mec.gov.br, em um endereço que nos remete até a rede desejada - nesse caso, a do Ministério da Educação (MEC).
+- O DNS é um sistema hierárquico que passou a ser utilizado em 1984, fundamentado em uma base de dados distribuída hierarquicamente na qual os equipamentos realizam consultas para descobrir o endereço IP dos computadores que precisam ser conectar.
+
+<br>
+
+#### `HTTP`:
+
+- É o protocolo que nos permite navegar entre páginas na internet.
+- HTTP significa `Hypertext Transfer Protocal` ou Protocolo de Transferência de Hipertexto.
+- O formato do texto criado para ser transportado pelo protocolo foi chamado de HTML (HyperText Markup Language) e conssite de uma linguagem de marcação pela qual é possível, por meio de comandos (tags), incluir ligações entre textos - inclusive entre materiais publicados em diferentes locais.
+- Foi criado no meio dos anos 90 por Tim Berners-Lee, um cientista de CERN, para ajudar a organizar os textos e pesquisas de seus companheiros de CERN.
+- Além de um protocolo (conjuto de regras para que dois dispositivos 'conversem') e de uma linguagem de marcação (para permitir que os usuários se expressem), era necessário um software que, utilizando-se do protoclo desenvolvido, conseguisse obter os documentos escritos em HTML, interpretá-los e exibi-los.
+- Por meio deste software,esperava-se que o usuário 'navegasse' pelo hipertexto, ou seja, ao encontrar no texto uma ligação com outro material, com um simples clique, o usuário seria direcionado para uma nova página/conteúdo.
+- Diante de tal necessidade, Tim Berners-Lee criou um protótipo daquele que viria a ser um dos software mais indispensáveis para quem deseja utilizar a internet: o navegador (ou browser).
+
+<br>
+
+
+## Tópico 6 - Sistemas Operacionais
+
+<br>
+
+### O que é um Sistema Operacional?
+<br>
 
 
 

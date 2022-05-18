@@ -176,3 +176,44 @@ Um hardware sem software é só um conjunto de circuitos elétricos com potencia
 
 #### `Sistemas Operacionais` :
 - Um sistema operacional é o software que inicializa o computador e que serve de meio de ligação entre o hardware e os demais programas.
+- Fornece a plataforma que os aplicativos especializados precisam para operar e acessar o hardware.
+- Toda vez que um aplicativo precisa exibir algo na tela, ele irá pedir ao sistema operacional que encaminhe seu material à saída de video.
+- Toda vez que um aplicativo precisar salvar uma informação para recuperá-la posteriormente, ele irá pedir ao sistema operacional que ative o dispositivo de armazenamento (HD, pen drive, etc.).
+
+![Sistemas Operacionais](./assets/Capturar5.PNG)
+
+<br>
+
+#### `Drivers` :
+- Para que dispositivos sejam reconhecidos pelo Sistema Operacional, eles dependem de uma interface que gerencie os dispositivos de entrada e saída, essa interface é o `driver`.
+- Auxiliam o Sistema Operacional no gerenciamento, reconhecimento e melhor uso possivel do hardware.
+
+![Drivers](./assets/Capturar6.PNG)
+
+<br>
+
+#### `Linguagens de Programação` :
+- Como fazemos software hoje em dia? Resposta: Com um software feito para isso.
+- O processo de produção de um software exige basicamente dois elementos: uma linguagem de programação e um compilador (ou interpretador).
+- A linguagem de programação é uma espécie de linguagem que se assemelha à linguagem humana, que o profissional da computação utiliza para expressar suas ideeias para que, em um segundo momento, um compilador ou interpretador às traduzem para uma linguagem que o computador consigar entender.
+
+![Linguagem de programação](./assets/Capturar7.PNG)
+
+<br>
+
+#### `Aplicativos e/ou utilitários` :
+- Os aplicativos são certamente aqueles com os quais você teve maior contato.
+- São todos aqueles que rodam em cima do sistema operacional, como: editores de texto, planilhas, jogos, navegadores, reprodutores de música e vídeo, etc.
+- Podem ser livres para utilizar, como os `softwares livres` ou podem requerer a compra de sua licença, como os `software proprietários`.
+
+![Aplicativos e/ou utilitários](./assets/Capturar8.PNG)
+
+<br>
+
+### Para Assimilar:
+
+~~~
+Software é o que dá sentido ao hardware. É o que faz o hardware operar em função do usuário. Há vários tipos de software, cada um com uma função específica.
+~~~
+
+> Importante notar que todo software foi construído por pessoas através de uma linguagem de programação.

@@ -175,4 +175,4 @@ Um hardware sem software é só um conjunto de circuitos elétricos com potencia
 <br>
 
 #### `Sistemas Operacionais` :
-- 
+- Um sistema operacional é o software que inicializa o computador e que serve de meio de ligação entre o hardware e os demais programas.

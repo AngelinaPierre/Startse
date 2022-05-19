@@ -400,19 +400,592 @@ dois algarismos na forma hexadecimal, como por exemplo: "00:19:B9:FB:E2:58".
 ### O que é um Sistema Operacional?
 <br>
 
+- É um `software` que fornece uma `interface` entre o hardware do computador e você, o usuário do computador.
+- O sistema operacional normalmente é organizado como uma coleção de programas de computador que:
+  - Inicializam o hardware.
+  - Fornecem rotinas básicas para controle dos dispositivos (entrada, saída e armazenamento).
+  - Gerenciam o escalonamento e a interação entre outros programas.
+  - Mantém a integridade das informações armazenadas.
+
+Existem diferentes tipos de sistemas operacionais, especializados em determinadas arquiteturas de hardware ou tipo de utilização (corporativo, pessoal, industrial, etc).
+
+<br>
+
+### Quais são as partes que compõem um `Sistema Operacional` ?
+
+<br>
+
+#### `Kernel (núcleo)` :
+
+- É o coração de um S.O., é onde ficam suas funções executivas, isto é, todas instruções de como comunicar com o hardware e como gerenciá-lo. 
+- É a parte mais valorosa de um S.O., é o elo do hardware com o software.
+- Seu principal objetivo é gerenciar o computador e permitir que os aplicativos sejam executados e façam uso dos recursos que a máquina tem.
+- O núcleo também tem que garantir, por exemplo, que a memória RAM seja usada em seu potencial sem risco para o computador.
+
+<br>
+
+#### `Gerenciador de Processos` :
+
+- Controla o uso que os programas fazem do computador, estabelecendo políticas para que essa utilização seja a mais justa possivel.
+
+<br>
+
+#### `Escalonador (scheduler)` :
+
+- Escalonamento de processos é o ato de realizar o chaveamento dos processos ativos, de acordo com regras bem estabelecidas, de forma que todos os processos tenham chance de utilizar a CPU. 
+- O escalonador é a parte do SO encarregada de decidir entre os processos prontos, qual será colocado na execução.
+- Existem várias formas de escalonamento, cada uma seguem diferentes critérios de justiça (cada processo obter sua parte justa do tempo da CPU), eficiência (garantir ocupação de 100% do tempo da CPU), minimizar o tempo de resposta a comandos de usuários interativos, maximizar o número de serviços processados por hora, etc.
+
+<br>
+
+#### `Gerenciador de arquivos` :
+
+- É a função que organiza, edita e predispõe as regras para o armazenamento de acordo com o sistema de arquivos.
+
+<br>
+
+#### `Interface` :
+
+- É a parte pensada para o `input` do usuário.
+- Podemos vê-la de várias formas: Um terminal para comandos como o MS-DOS, uma interface gráfica como o Windows ou MacOS, uma tela com textos e interação via botões como os aparelhos mp3, etc.
+- Em interfaces gráficas podemos também ter várias formas de `input`.
+
+A `interface` de um sistema operacional pode nos ser apresentada de diferentes formas, uma delas é conhecida como `prompt de comando` ou `terminal`. Um prompt de comando é na verdade uma jabela através da qual o usuário dispara comandos que acionam ações do sistema operacional. Este tipo de interface é normalmente utilizada por usuários avançados, uma vez que oferece um nível mais elevado de complexidade para sua utilização.
+
+![Prompt de Comando](./assets//Capturar10.PNG)
+
+<br>
+
+Outra forma que a `interface` do sistema operacional nos é apresentada é por meio de uma área de trabalho com ícones e janelas gráficas. Essa certamente é a forma em que estamos mais acostumados a ter contato com o sistema operacional. Ícones são pequenas imagens utilizadas para simbolizar ações ou programas. Sua ação está normalmente associada ao uso do `mouse`, que ao clicar sobre o ìcone dispararia alguma ação.
+
+![Interface como Area de trabalho](./assets/Capturar11.PNG)
+
+<br>
+
+As `janelas` são um recurso gráfico muito importante da interface de um sistema operacional moderno. Uma janela é uma área geralmente retangular composta por uma barra de título com alguns botões de controle que atuam sobre a própria janela. Os botões de controle podem minimizar a janela (ocultando-a temporariamente), maximizá-la (fazendo com que a mesma ocupe todo o tamanho da área de trabalho) ou restaurá-la (de forma que retorne ao seu tamanho original). As janelas são normalmente delimitadas por bordas, que se clicadas e movimentadas, permitem que a mesma seja redimensionada. Para mover uma janela utiliza-se clicar sobre sua barra de título arrastando-a até sua nova posição.
+
+![Janelas](./assets/Capturar12.PNG)
+
+<br>
+
+### Quais são os tipos de `Sistemas Operacionais`?
+
+<br>
+
+#### `DESKTOP` :
+
+- São os tipos que vemos em computadores de mesa e/ou laptops.
+- São os primeiros a ser desenvolvidos, e os mais notáveis são o Windows, MacOS e as milhares de distribuições do Linux.
+- São pensados para funções do dia a dia e ambiente de trabalho, como cálculos matemáticos, navegação na Web, edição de texto, vídeo ou áudio, execução de músicas e vídeos, etc.
+- São fetios geralmente para a arquitetura CISC (Complex Instruction Set Computer) de processadores, com exceção do novo MacOS, que transicionou para o modelo ARM (RISC - Reduced Instruction Set Computer).
 
 
+<br>
+
+#### `SERVER` :
+
+- São S.Os focados em estabilidade, gestão de uma grande quantidade de arquivos e armazenamento e segurança, são utilizados para esta do lado do servidor.
+- Neste mundo `server-side` , a grande maioria das máquinas usa alguma distro Linux derivada de Red Hat, como o próprios Red Hat, mantido pela Oracle, ou o Fedora, por exemplo.
+- Há também o Windows Server, também bastante utilizado pela familiaridade do público em geral com o sistema.
+- É um Windows sem figuras e focado nas funções necessárias para um Servidor.
+
+![](./assets//Capturar13.PNG)
+
+<br>
+
+### `MOBILE` :
+
+- São S.Os dedicados à aparelhos mobile, como smartphones e tablets.
+- Caracterizam-se por otimizar na arquitetura ARM de processadores e por serem desenhados para a experiência ótima por telas de toque.
+- O mercado global é dominado pelo sistema Android, que é Linux (open source), e suas variações, mas tem um npumero expressivo do sistema IOS.
+- E um que vale mencionar, é o descontinuado Windows Phone. Foi a tentativa da Microsoft de entrar no mundo dos S.Os Mobile que não vingou.
+
+![](./assets/Capturar14.PNG)
+
+<br>
+
+#### `EMBUTIDO (Embedded)` :
+
+- São pensados para `hardwares`com pouca capacidade de processamento e têm uma função muito específica, como por exemplo, o S.o> dos primeiros celulares com multimídia, calculadoras, tocadores de MP3, relógios inteligentes, caixas eletrônicos, copiadoras, etc.
 
 
+![](./assets/Capturar15.PNG)
+
+<br>
+
+### Mais quais são as principais `funções` de um `sistema operacional?` :
+
+<br>
+
+Há basicamente `três funções` que todo o sistema operacional precisa nos fornecer:
+- `Gerenciamento de processos` (ou programas).
+- `Gerenciamento de Arquivos` .
+- `Gerenciamento de Memória` .
+
+<br>
+
+#### `Gerenciamento de processos` :
+
+- A primeira função consiste em permitir a execução de outros softwares, gerenciar o seu ciclo de vida e o compartilhamento de recursos pelos mesmos.
+- `Isso significa que é função do sistema operacional controlar o uso que os demais programas fazem do computador`, estabelecendo políticas para que essa utilização seja a mais justa possível.
+
+Imagine um cenário onde um usuário está acessando uma página para fazer uma pesquisa, ouvindo música e conversando com um amigo pela internet. Neste caso, temos pelo menos três aplicações utilizando o hardware quase que simultaneamente. O gerenciamento de processos do sistema operacional é responsável
+por permitir que cada aplicação utilize os recursos de hardware, especialmente o processador, um pouco de cada vez, de forma transparente, ou seja, sem que o usuário perceba este compartilhamento.
+Os sistemas operacionais geralmente nos oferecem opções para visualizar e monitorar o conjunto de tarefas que estão sendo executadas.
+
+<br>
+
+#### `Gerenciamento de Arquivos` :
 
 
+- A segunda função do sistema operacional é o gerenciamento de arquivos.
+- Essa sem dúvida é a funcionalidade que, enquanto enquanto usuário, mais teremos contato.
+- Um arquivo é um conjunto de dados que podem ser reconhecidos por uma aplicação.
+- As informações armazenadas por um computador em um dispositivo de armazenamento (SSD, HD, pen drive, DVD, etc) estão contidas em arquivos.
+- Os arquivos possuem atributos, como por exemplo, um nome, uma data e hora de alteração, tamanho e tipo.
+- Alguns caracteres não são permitidos para compor o nome de arquivos.
+- O tipo de uma arquivo identifica para o sistema operacional o conteúdo do mesmo.
+- Normalmente o tipo de um arquivo é identificado por meio de um extensão (uma pequena sigla disposta após o nome do arquivo e separada por um "." - ponto).
+- Quando descarregamos as fotos e vídeos de nosso smartphone para o computador, cada foto e vídeo é um arquivo.
+- Quando escrevemos um trabalho escolar ou um relatório profissional estamos produzindo arquivos.
+- Quando escutamos música em formato digital estamos acessando, para cada música, um arquivo.
+
+![](./assets/Capturar16.PNG)
+
+<br>
+
+- Os sitemas operacionais nos oferecem gerenciadores de arquivos, ou seja, aplicações que permitem organizar da maneira mais adequada os arquivos existentes nos diposiitivos de armazenamento.
+- Neste sentido, é importante que conheçamos o conceito de diretório ou pasta.
+- Uma pasta (também conhecida por diretório) é uma estrutura utilizada para agrupar e organizar arquivos.
+- Seria o mesmo que fazer a seguinte analogia com um escritório: pastas são gavetas ou envelopes e arquivos são os documentos contidos nas gavetas ou envelopes.
+- Nunca vamos encontrar um arquivo com uma pasta dentro, ou seja, as pastas guardam arquivos, mas o contrário não.
+
+![](./assets/Capturar17.PNG)
+
+<br>
+
+- O sistema de arquivos de um sistema operacional geralmente inicia-se a partir de um `diretório raiz` e a parte dele para organizar os subdiretórios.
+- No caso do Windows, o diretório raiz de um dispositivo de armazenamento é conhecido por unidade e é representado por uma letra seguida pelo sinal de dois pontos ":".
+- Por convenção, um disco rígido (HD ou SSD) é normalmente a unidade "C:", já um pen drive, por se tratar de um dispositivo removível, poderá se utilizar de qualquer letra.
+- Para os antigos drives de disquete o WIndows reserva as letras "A:" e "B:".
+- Partindo-se da letra da unidade e o conjunto de subdiretórios hierarquicamente inferiores conseguimos chegar até o local onde o arquivo está armazenado.
+
+![](./assets/Capturar18.PNG)
+
+<br>
+
+##### Quais `Operações` posso fazer com arquivos em um sistema operacional?
+
+<br>
+
+Podemos : `Criar uma cópia`, `mover`, `excluir`, `restaurar`, `compactar`, `criar uma atalho`, `localizar`, `renomear`.
+
+<br>
+
+#### `Gerenciamento de Memória` :
+
+- O sistema operacional aloca e gerencia um espaço da memória principal para cada apicativo poder utiliza-la.
+- Da mesma forma, ele também protege tais áreas de forma que aplicativos não "invadam" o espaço de memória uns dos outros.
+- Na medida em que um aplicativo necessita de mais memória, ele solicita ao sistema operacional que irá verificar a disponibilidade e lhe permitir o acesso.
+- Um recurso muito importante e útil dessa função é a área de transferência.
+- A área de transferencia se constitui como uma região de memória gerenciada pelo sistema operacional na qual os aplicativos podem livremente "copiar" dados.
+- Os dados da área de transferência podem ser descarregados no próprio aplicativo ou em outro (uma vez que a área de transferência é um recurso compartilhado).
+
+As três principais funções da área de transferência são justamente:
+- Copiar
+- Colar
+- Recortar
+
+<br>
+
+## Tópico 7 - Tipos de aplicação Web
+
+<br>
+
+### O que é uma `webpage`?
+
+<br>
+
+- Uma webpage é um documento individual que pode ser visualizado online.
+- Ela pode ser uma página repleta de textos, imagens ou vídeos.
+- Uma `webpage` pode ser uma formulário simples até mesmo aparentar estar vazia, abrigando códigos que você sequer pode notar.
+- Cada `webpage` contém uma URL específica que direciona os usuários até ela.
+- Um `website`, por sua vez, é uma coleção de `webpages`.
+- Se `webpages` sãp páginas, o site é como se fosse o livro todo.
+
+O elemento principal de uma página web é um ou mais arquivos de texto escritos na linguagem HTML (Hypertext Markup Language).
+
+Muitas páginas web também usam código JavaScript para compotamento dinâmico e código CSS (Cascading Style Sheets) para semântica de apresentação. Imagens, vídeos e outros arquivos multimídia também são frequentemente incorporados em páginas web.
+
+<br>
+
+### Qual é a diferença entre um site `Estático` e `Dinâmico`?
+
+<br>
+
+#### `Site Estático` :
+
+- É aquele que `não` conta com ferramentas de gerenciamento para alterações, mudanças ou reformulações realmente significativas de conteúdo, sem alteração do código fonte.
+- Isso significa que, caso você deseje realizar esse tipo de modificação em um `website estático`, precisará de um profissional que tenha conhecimento de linguagens como CSS, JavaScript, PHP ou HTML.
+
+<br>
+
+#### `Site Dinâmico` :
+
+- Permite que sejam realizadas constantes `alterações` de conteúdo, como a criação de páginas, mas sem a necessidade de alteração no código fonte por parte de um profissional da área.
+- Também chamado de `site gerenciável`, o site dinâmico conta com um sistema de gerenciamento integrado, possibilitando a realização de alterações por meio de um `CMS` (Content Management System), como o WordPress.
 
 
+<br>
+
+### O que é uma `aplicação web` ?
+
+<br>
+
+#### `Aplicação Web` :
+
+- A aplicação web diz respeito a uma solução que é executada diretamente no navegador, não sendo preciso realizar uma instalação na máquina do usuário.
+- Pode-se, também, utilizar como definição: `tudo aquilo que é processado em um servidor terceiro.`
+- As plataformas de e-commerce, os apps do google como o `docs` e o `meets`, e as redes sociais são alguns dos exemplos de aplicações web.
 
 
+<br>
+
+### Como se desenvolve `aplicações Web` ?
+
+<br>
+
+#### `Front-end` :
+
+- `Front-end`significa "parte dianteira", ou seja, a porta de frente de uma aplicação web.
+- É a parte responsável por "dar vida" à interface.
+- Podemos definir `front-end` como a parte visual de um site, desenvolve o código que será renderizada nos aspectos visuais e interativos de uma página.
+- HTML, CSS, JavaScript (React, Angular), Dart (Flutter), Swift e XML são exemplos de linguagens utilizadas para a construção visual de páginas e aplicativos.
+- Um código simples de front-end se parece com isso (foto abaixo). Esta é uma página HTML, observe as tags de abertura e fechamento que denotam que elemento da página que está sendo criado.
+
+![](./assets/Capturar19.PNG)
+
+<br>
+
+##### `Body` : corpo
+##### `div` : divisão
+##### `h1` : header 1/ título, cabeçalho
+##### `ol` : ordered list/ lista ordenada
+##### `li` : list item/ item de lista
 
 
+<br>
 
+#### `Back-end` :
+
+- `Back-end, ou 'parte traseira' é a parte de "trás" de uma aplicação Web.
+- Ela é a responsável, em termos gerais, pela implementação da `regra de negócio`.
+- Ela é o "motor" de uma aplicação web: ela que verifica, por exemplo, se a senha bate com o usuário e efetua o login em um site.
+- Também é no back-end que se faz a comunicação com o banco de dados, para buscar ou armazenar informações, etc.
+- Quando falamos de back-end em desenvolvimento web, nos deparamos com várias linguagens, como Go, Clojure, C#, PHP, Java, Python, Ruby, entre outras.
+- Um códgio simples de back-end se parece com isso (foto abaixo). Este é um módulo em TypeScript, que define o que será feito se algo for postado em '/current';
+
+![](./assets/Capturar20.PNG)
+
+<br>
+
+- Parece ser uma aplicação web de algum jogo, em que no endpoint da API '/current' temos o jogador selecionado.
+- O método está definindo a ação dee trocar o jogador selecionado.
+- Assim, ela recebe como par^metros da resuisição o identificador do jogador, o seu ID.
+- Com ele, ele verifica se há um jogador com esse ID.
+- Se não há o ID, ele imprime no console que não há jogador com tal ID.
+- Havendo o ID, ele faz a troca do jogador selecionaado e retorna o novo jogador. Se houver algum tipo de erro, ele captura o erro e imprime no console.
+
+
+<br>
+
+### Como `Front-end` e `Back-end` se `comunicam` ?
+
+<br>
+
+#### `APIs` :
+
+- Uma `API` (Application Programming Interface) pode ser definida como um conjuton de padrões que permite a construção de aplicativos, onde ele conecta aplicações, podendo ser utilizada nos mais variados tipos de negócios.
+- Com a API você tem uma interface para que um sistema se comunique com outro sistema, compartilhando suas ações e ferramentas.
+- A comunicação é feita através de vários códigos, definindo comportamentos especifícos.
+
+<br>
+
+##### `API Endpoints` :
+- Um endpoint contêm três principais caracteristicas:
+  - `Address` : Onde o serviço esta hospedado.
+  - `Binding` : Como o serviço pode ser acessado.
+  - `Contract` : O que tem no serviço.
+
+<br>
+
+##### `JSON` :
+
+- O formato JSON (javaScript Object Notation) é, como o nome sugere, uma forma de notação de objetos JavaScript de modo que eles possam ser representados de uma forma comum a diversas linguagens.
+- Além disso, uma ideia que está fortemente enraizada neste formato é que ele seja facilmente trafegado entre aplicações em quaisquer protocolos, inclusive o HTTP.
+- Portanto, a principal diferença entre um objeto JavaScript padrão e um JSON é o fato do JSON ser na realidade: um texto.
+
+<br>
+
+##### `Integração` :
+
+- A integrtação é como se comumente chama o ato de conectar o `Back-end` ao `Front-end`.
+- Geralmente, o Back-end é estruturado em uma API, em que cada endpoint expõe um serviço necessário para a aplicação.
+- O front-end consome dessa API as informações que serão exibidas na página.
+- Para isso, ela faz a requisição (passando parâmetros ou não) em um dos endpoints.
+- As informações vêm em formato JSON.
+- A partir disso, o front consegue mapear os dados e exibi-los na tela.
+
+![](./assets/Capturar21.PNG)
+
+![](./assets/Capturar22.PNG)
+
+
+<br>
+
+### Qual a diferença entre `aplicações Web` tradicionais e `SPAs`?
+
+<br>
+
+#### `Aplicações SPAs` :
+
+- `SPA` significa `Single Page Application`, ou Aplicação de Página Única.
+- Mas não é um site de uma só página como o nome sugere.
+- É, na verdade, uma forma de site com múltiplas páginas que carrega apenas uma vez.
+- Em vez de um carregamento por página (uma requisição por página), como é uma aplicação Web convencinal, um SPA carrega toda a aplicação apenas uma vez, demorando mais no início, mas tendo mais fluidez na troca de páginas.
+
+<br>
+
+
+## Tópico 8 - Principais funções de um sistema operacional (aula)
+
+<br>
+
+## Tópico 9 - Tipos de aplicação Web (aula)
+
+<br>
+
+## Tópico 10 - Front-end e Back-end (aula)
+
+<br>
+
+## Tópico 11 - Extras - Entendendo o mercado de computadores
+
+<br>
+
+### Qual é o `cenário` das `especificaçõesdos` computadores hoje? Como escolher um bom computador?
+
+- A maior parte dos computadores comercializados contém processadores dessas duas famílias e marcas: AMD Ryzen e Intel Core.
+- Ambos são processadores de qualidade e com recursos modernos para as tarefas que mais usamos hoje.
+- Os AMD Ryzen custam menos e oferecem mais poder bruto por núcleo, enquanto os Intel custam mais e oferecem mais eficiência multi-núcleo.
+
+
+![](./assets/Capturar23.PNG)
+
+<br>
+
+~~~
+Há também os Apple Silicon, que mudaram a arquitetura dos laptops e desktops e entregam muita mais potência e eficiência que os mencionados.
+~~~
+
+![](./assets/Capturar24.PNG)
+
+<br>
+
+~~~
+Outro aspecto importante é a quantidade de RAM. Para 2022, é muito difícil fazer um uso
+contínuo e fluido de um computador sem ter
+pelo menos 8GB de RAM.
+~~~
+
+![](./assets/Capturar25.PNG)
+
+<br>
+
+- O armazenamento também passou por uma revolução nos últimos anos. Encontramos no mercado opções com SSD e com HD.
+- A diferença é no tamanho de armazenamento, na velocidade e no preço;
+- SSDs são mais caros que HDs e oferecem menos armazenamento no geral. Dois PCs do mesmo modelo com o mesmo preço, oferece HD de 1TB vs. SSD de 128GB.
+- A diferença de armazenamento é gigante, mas de desempenho também o SSD é até 10 vezes mais rápido que um HD top de linha.
+
+
+![](./assets/Capturar26.PNG)
+
+<br>
+
+- Outro ponto importante a se observar é a qualidade de construção.
+- Com isso, a gente verifica a durabilidade de um modelo, sua facilidade de manutenção e conforto no uso.
+- Há muitos modelos com boas especificações mas pessimamente construído, coisa que atrapalha as qualidades do modelo e o faz ser pior que um modelo mais bem construído com menos potência.
+
+
+<br>
+
+### Quais são as `especificações ideais` para um `desenvolvedor`?
+
+1) Processador igual ou acima dos Intel Core i5 ou AMD Ryzen 5 das últimas 3 gerações: Intel começados em 8, E Ryzen começados em 3. 
+   - Exemplos: Processador Intel® Core™ i5-8365U, Processador AMD Ryzen 5 3600
+2) Acima de 8GB de memória RAM.
+3) Preferência por SSD, ou upgrade para SSD futuramente.
+
+![](./assets/Capturar27.PNG)
+
+<br>
+
+
+## Tópico 12 - Engenharia de Software e boas práticas
+
+<br>
+
+### Como funciona o desenvolvimento de software?
+
+<br>
+
+#### Software é `desenvolvido ou passa por um processo de engenharia`; ele não é fabricado no sentido clássico.
+- Embora existam algumas similaridades entre o desenvolvimento de software e a fabricação de hardware, as duas
+atividades são fundamentalmente diferentes.
+- Ambas requerem a construção de um “produto”, entretanto, as abordagens são diferentes.
+- Os custos de software concentram-se no processo de engenharia.
+- Isso significa que projetos de software não podem ser geridos como se fossem projetos de fabricação.
+
+![](./assets/Capturar28.PNG)
+
+<br>
+
+#### Software não se `desgasta`, ele se `deteriora`.
+- Software não é suscetível aos males ambientais que fazem com que o hardware se desgaste.
+- Portanto, teoricamente, a curva da taxa de defeitos para software deveria assumir a forma da “curva idealizada”.
+- Defeitos ainda não descobertos irão resultar em altas taxas logo no início da vida de um programa.
+- Entretanto, esses serão corrigidos e a curva se achata como mostrado.
+- curva idealizada é uma simplificação grosseira de modelos de defeitos reais para software.
+- Porém, a implicação é clara: software não se desgasta, mas sim se deteriora!
+
+<br>
+
+#### Quais são os desafios no `desenvolvimento de software?`
+- Devemos fazer um `esforço concentrado para compreender o problema antes de desenvolver uma solução de software`;
+- Dado o aumento da complexidade do software em todos âmbitos, `estar constantemente atualizado` e a par das novas tecnologias é fundamental. Pelo mesmo motivo, `projetar tornou-se uma atividade-chave`;
+- Em um mundo cada vez mais dependente de software, `um software deve apresentar qualidade elevada`;
+- À medida que sua base de usuários e seu tempo em uso forem aumentando, a demanda por adaptação e perfeiçoamento também irá aumentar. Portanto, um `software deve ser passível de manutenção`.
+
+![](./assets/Capturar29.PNG)
+
+> Dessa forma, software, em todas as suas formas e em todos os seus campos de aplicação, deve passar pelos `processos de engenharia`.
+
+<br>
+
+### O que é `engenharia de software?`
+
+- `Engenharia de software` é a aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software; isto é, a `aplicação` de `engenharia ao software`. Bem como o estudo de abordagens.
+- A engenharia de software é uma tecnologia em camadas.
+- A pedra fundamental que sustenta a engenharia de software é o foco na qualidade.
+- A base para a engenharia de software é a camada de processos.
+
+#### `Processo` :
+- O processo de engenharia de software é a liga que mantém as camadas de tecnologia coesas e possibilita o
+desenvolvimento de software de forma racional e dentro do prazo.
+- O processo define uma metodologia que deve ser estabelecida para a entrega efetiva de tecnologia de engenharia de software.
+
+<br>
+
+#### `Métodos` :
+- Os métodos da engenharia de software fornecem as informações técnicas para desenvolver software: comunicação, análise de requisitos, modelagem de projeto, construção de programa, testes e suporte.
+
+<br>
+
+#### `Ferramentas` :
+- As ferramentas da engenharia de software fornecem suporte automatizado ou semi-automatizado para o processo e para os métodos.
+
+<br>
+
+### E o que é o `processo de software?`
+
+<br>
+
+As cinco atividades genéricas do processo de software:
+1) `Comunicação`: levantamento das necessidades que ajudarão a definir as funções e características do software.
+2) `Planejamento`: define o trabalho de engenharia de software, descrevendo as tarefas técnicas a ser conduzidas, os riscos prováveis, os recursos que serão necessários, os produtos resultantes a ser produzidos e um cronograma de trabalho.
+3) `Modelagem`: Cria-se um “esboço” da coisa, de modo que se possa ter uma ideia do todo — qual será o seu aspecto em termos de arquitetura, como as partes constituintes se encaixarão e várias outras características.
+4) `Construção`: Essa atividade combina geração de código e testes necessários para revelar erros na codificação.
+5) `Emprego (Implantação)`: O software é entregue ao cliente, que avalia o produto entregue e fornece feedback, baseado na avaliação.
+
+![](./assets/Capturar30.PNG)
+
+<br>
+
+A essência da prática:
+
+- Compreenda o problema;
+- Planeje a solução;
+- Execute/leve adiante o plano;
+- Examine o resultado.
+
+
+<br>
+
+### Os `7 princípios` da engenharia de software
+<br>
+
+1) `A razão de existir!`
+~~~
+Um sistema de software existe por uma única razão: gerar valor a seus usuários. Todas as decisões deveriam ser tomadas tendo esse princípio em mente. Antes de especificar uma necessidade de um sistema, antes de indicar alguma parte da funcionalidade de um sistema, antes de determinar as plataformas de hardware ou os processos de desenvolvimento, pergunte a si mesmo: “Isso realmente agrega valor real ao sistema?”. Se a resposta for “não”, não o faça. Todos os demais princípios se apoiam neste primeiro.
+~~~
+
+2) `KISS (`K`eep `I`t `S`imple `S`tupid!)`
+~~~
+Esse princípio contribui para um sistema mais fácil de compreender e manter. Isso não significa que características, até mesmo as internas, devam ser descartadas em nome da simplicidade. De fato, frequentemente os projetos mais elegantes são os mais simples, o que não significa “rápido e malfeito” — na
+realidade, simplificar exige muita análise e trabalho durante as iterações, sendo que o resultado será um software de fácil manutenção e menos propenso a erros.
+~~~
+
+3) `Mantenha a visão`
+~~~
+Uma visão clara é essencial para o sucesso. Sem ela, um projeto se torna ambíguo. Sem uma integridade conceitual, corre-se o risco de transformar o projeto numa colcha de retalhos de projetos incompatíveis, unidos por parafusos inadequados... Comprometer a visão arquitetônica de um sistema de software debilita e até poderá destruir sistemas bem projetados. Ter um arquiteto responsável e capaz de  manter a visão clara e  e reforçar a adequação ajuda a assegurar o êxito de um projeto.
+~~~
+
+4) `O que um produz os outros consomem`
+~~~
+Sempre especifique, projete e implemente ciente de que alguém mais terá de entender o que você está fazendo.  O público para qualquer produto de desenvolvimento de software é potencialmente grande. Especifique tendo em vista os usuários; projete, tendo em mente os implementadores; e codifique considerando aqueles que  terão de manter e estender o sistema. Alguém terá de depurar o código que você escreveu e isso o faz um  suário de  seu código; facilitando o trabalho de todas essas pessoas você agrega maior valor ao sistema.
+~~~
+
+5) `Esteja aberto para o futuro`
+~~~
+Nos ambientes computacionais de hoje, em que as especificações mudam de um instante para outro e as plataformas de hardware se tornam rapidamente obsoletas, a vida de um software, em geral, é medida em meses, mas precisamos de produtos mais duráveis que isso! Jamais faça projetos limitados, sempre pergunte “e se” e prepare-se para todas as possíveis respostas, criando sistemas que resolvam o problema geral, não apenas aquele específico. Isso muito provavelmente conduziria à reutilização de um sistema inteiro.
+~~~
+
+6) `Planeje com antecedência, visando a reutilização`
+~~~
+Planejar com antecedência para o reuso reduz o custo e aumenta o valor tanto dos componentes reutilizáveis quanto dos sistemas aos quais eles serão incorporados.
+~~~
+
+7) `Pense!`
+~~~
+Este último princípio é, provavelmente,aquele que é mais menosprezado. Pensar bem e de forma clara antes de
+agir quase sempre produz melhores resultados. Quando se analisa alguma coisa, provavelmente esta sairá correta. Ganha-se também conhecimento de como fazer correto novamente. Se você realmente analisar algo e mesmo assim o fizer da forma errada, isso se tornará uma valiosa experiência. Um efeito colateral da análise é aprender a reconhecer quando não se sabe algo, e até que ponto poderá buscar o conhecimento.
+~~~
+
+
+<br>
+
+### O que são `boas práticas?`
+
+<br>
+
+A ideia central por trás do conceito de boas práticas é: `não se faz código para máquinas, mas sim para pessoas!`
+
+Boas práticas são toda ação no ambiente de desenvolvimento que corrobora para garantir os sete princípios que mencionamos: `que visam a durabilidade, facilidade de manutenção, clareza e compreensão do código, bem como a postura de documentar e compartilhar conhecimento sobre o projeto e tecnologias.`
+
+![](./assets/Capturar31.PNG)
+
+<br>
+
+<br>
+
+## Tópico 13 - O que é engenharia de software?
+
+<br>
+
+
+## Tópico 14 - Os 7 princípios da engenharia de software
+
+<br> 
 
 
 

@@ -181,16 +181,107 @@ Logo temos a ascensão das linguagens de alto nível para nos ajudar na criaçã
 <br>
 
 ### O que é uma linguagem de marcação? 
+- Uma `linguagem dee marcação` (em inglês: markup language), é um conjuton de sinais e códigos aplicados a um texto ou a dados para definir a sua configuração.
+- A marcação não aparece no trabalho final.
+- O termo "marcação" vem da sinalética ou "marcas de revisão" (em inglês revision marks) utilizada por redatores em provas de impressão de jornais e manuscritos.
+
+`HTML` é o elemento básico da web, define a estrutura ou esqueleto de uma webpage.
+
+<br>
+
+### Linguagem de Marcação de `HiperTexto`
+- `HiperTexto` refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites.
+- Links são um aspecto fundamental da web.
+
+![](./assets/Capturar13.PNG)
+
+<br>
+
+![](./assets/Capturar14.PNG)
+
+<br>
+
+![](./assets/Capturar15.PNG)
 
 
+
+
+
+<br>
 
 ## Tópico 5 - Para que serve CSS
+
+<br>
+
+### O que é e para que serve `CSS`?
+
+- `CSS` (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para `descrever a apresentação`, em outras palavras, dar estilo a um documento escrito em HTML ou em XML (incluindo várias línguagens em XML como SVG, MathML ou XHTML).
+- O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+
+![](./assets/Capturar16.PNG)
+
+<br>
+
+![](./assets/Capturar17.PNG)
+
+
 
 <br>
 
 ## Tópico 6 - Como pesquisar erros/duvidas de código no google
 
 <br>
+
+### O que fazer quando não encontrar a solução para um problema no Google?
+
+- Na maioria das vezes não estamos fazendo a pergunta certa.
+- Primeiro entenda a causa real do problema.
+- Encontrada a origem do problema, é importante entender do que o problema se trata.
+
+![](./assets/Capturar18.PNG)
+
+<br>
+
+1) Pesquise em inglês
+2) Remova da busca qualquer palavras específicas do seu sistema.
+3) Adicionar o nome da biblioteca ou linguagem de programação no ínicio da busca pode ajudar.
+4) Utilize aspas duplas para buscar o termo específico, removendo conteúdo similares.
+~~~
+"Programação Web"
+~~~
+5) Caso queira buscar em um site específico (que não tenha um sistema de busca) utilize:
+~~~
+site:https://developer.mozilla.org introdução
+~~~
+6) Caso queira remover um termo específico da busca, utilize o hífen.
+~~~
+how manipulate html dom -jquery
+~~~
+7) Podemos utilizar o `before` e especificar o ano para buscar conteúdos mais antigos.
+~~~
+javascript before:2021
+~~~
+8) Podemos utilizar o `after` e especificar o ano para buscar conteúdos mais novos.
+~~~
+javascript after:2021
+~~~
+9) Podemos utlizar o .. e para intervalos de datas.
+~~~
+es5 announcement 2008..2011
+~~~
+10) Podemos utilizar o pipi "|" para comparação de tecnologias
+~~~
+reactjs | vuejs | angular
+~~~
+11) Podemos especificar o tipo de arquivo que estamos buscando
+~~~
+martin fowler microservices filetype:pdf
+~~~
+12) Podemos utilizar o `related` para encontrar termos relacionados ao que estamos buscando.
+~~~
+related:microservices
+~~~
+
 
 ## Tópico 7 - Como pesquisar erros/duvidas de código no stack overflow
 

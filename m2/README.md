@@ -147,7 +147,31 @@ Compilador é um software essencial para programadores.
 
 <br>
 
+### Mas o que ocorre nesse processo de compilação do código fonte?
 
+<br>
+
+![](./assets/Capturar10.PNG)
+
+> Criar sistema de alto nível utilizando linguagens de baixo nível é inviável
+
+Logo temos a ascensão das linguagens de alto nível para nos ajudar na criação de sistemas. Linguagens próximas da comunicação humana. Consequentemente precisávamos de um caminho para gerar a linguagem de máquina : `COMPILADORES`
+
+- O compilador analisa linguagens de programação de alto nível e transforma em código de máquina
+
+
+![](./assets/Capturar11.PNG)
+
+<br>
+
+### `Fase de Análise`: 
+- Divide o código fonte e cria uma representação intermediária do mesmo.
+- Análise `léxica`, `sintática` e `semântica`.
+
+### `Fase de Síntese`:
+- Composta por módulos de geração e otimização de código de máquina a partir da geração intermediária.
+
+![](./assets/Capturar12.PNG)
 
 
 <br>
@@ -155,6 +179,10 @@ Compilador é um software essencial para programadores.
 ## Tópico 4 - Pra que serve HTML
 
 <br>
+
+### O que é uma linguagem de marcação? 
+
+
 
 ## Tópico 5 - Para que serve CSS
 
